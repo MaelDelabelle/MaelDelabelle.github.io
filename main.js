@@ -1,12 +1,15 @@
 $(document).ready(function(){
 //Affiche et cache les informations de contact
 $("#contactBox").click(function(){
-    $("#contact").toggleClass("hidden")
+    var largeurEcran = $(window).width();
+    if(largeurEcran <= 720){
+        $("#contact").toggleClass("hidden")
+    }
 })
 
 $("#contact").click(function(){
-    if($("#contact").hasClass("hidden")){
-        $("#contact").hide()
+    if(largeurEcran <= 720){
+        if($("#contact").hasClass("hidden")){$("#contact").hide()}
     }
 })
 

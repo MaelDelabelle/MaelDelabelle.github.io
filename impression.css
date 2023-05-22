@@ -1,7 +1,9 @@
+*{print-color-adjust: exact;}
 html {
     scroll-behavior: smooth;
     font-family: "Roboto", Arial, sans-serif;
     background-color: #e5e6e4;
+    font-size: 15px;
 }
 
 body{
@@ -26,10 +28,10 @@ header section{
     border-radius: 15px;
     width: 50%;
     height: 210px;
-    padding: 15px;
+    padding: 5px;
     margin: 0;
     position: relative;
-    top: 100px;
+    top: 70px;
     color: black;
 }
 
@@ -48,9 +50,9 @@ main section{
     border-radius: 15px;
     box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
     15px 15px 15px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
 }
 
 main h2{
@@ -221,7 +223,7 @@ div h3{
 
 /*Bouton pour remonter----------------------------------------------------------------*/
 #backToStart{
-    display: block;
+    display: none;
     visibility: visible;
     opacity: 1;
     transition: visibility 0s, opacity 0.5s ease-in;
@@ -242,7 +244,7 @@ div h3{
 
 footer{
     background-color: #222;
-    display: flex;
+    display: none;
     justify-content: space-between;
     padding-left: 50px;
     padding-right: 50px;
